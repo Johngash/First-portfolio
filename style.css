@@ -1,0 +1,110 @@
+*{
+    font-family: poppins;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(155,155,155,0.5) transparent;
+    margin: 0;
+}
+
+a{
+    all: unset;
+    cursor: pointer;
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.topBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0;
+    height: 46px;
+}
+
+li{
+    list-style: none;
+    font-size: 20px;
+    font-weight: 1000;
+    color: rgba(0, 0, 0, 0.753);
+}
+
+.info{
+    margin: 0;
+    width: 100vw;
+    height: calc(100vh - 46px ); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-image: linear-gradient(to top right,rgb(65, 65, 65),white,white);
+}
+
+.meee{
+    position: absolute;
+    height: 50vh;
+    justify-self: center;
+    top: calc(50% - 25vh);
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.half{
+    width: 50%;
+    position: absolute;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    right: 0;
+}
+
+.meName{
+    font-size: 40px;
+    font-weight: bolder;
+    position: relative;
+}
+
+.meName::after{
+    content: '';
+    position: absolute;
+    background: linear-gradient(to right,rgb(253, 192, 255),rgb(0, 92, 128),rgb(0, 217, 255),rgb(255, 255, 255));
+    height: 4px;
+    width: 30%;
+    border-radius: 1.2px;
+    bottom: 0;
+    left: 0;
+
+}
+
+.middledot{
+    width: auto;
+    position: relative;
+}
+
+.middledot::after{
+    content: '';
+    position: absolute;
+    padding: 3px;
+    border-radius: 3px;
+    top: calc(50% - 1.5px);
+    background-color: rgb(71, 71, 71);
+    left: calc(50% - 1.5px);
+}
+
+.hobbies{
+    font-weight: bold;
+    color: rgb(71, 71, 71);
+}
