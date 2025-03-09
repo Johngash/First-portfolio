@@ -30,6 +30,13 @@ li{
     font-size: 20px;
     font-weight: 1000;
     color: rgba(0, 0, 0, 0.753);
+    transition: opacity 0.25s;
+}
+li:hover{
+    opacity: 0.6;
+}
+li:active{
+    opacity: 0.1;
 }
 
 .info{
@@ -51,6 +58,7 @@ li{
     top: calc(50% - 25vh);
     border-radius: 50%;
     object-fit: contain;
+    box-shadow: -4px 5px 10px rgba(255, 255, 255, 0.596);
 }
 
 .half{
@@ -80,13 +88,12 @@ li{
 .meName::after{
     content: '';
     position: absolute;
-    background: linear-gradient(to right,rgb(253, 192, 255),rgb(0, 92, 128),rgb(0, 217, 255),rgb(255, 255, 255));
+    background: linear-gradient(to right,rgb(253, 192, 255),rgb(0, 92, 128),rgb(0, 217, 255),rgb(211, 248, 255),rgb(255, 255, 255));
     height: 4px;
-    width: 30%;
+    width: 50%;
     border-radius: 1.2px;
     bottom: 0;
     left: 0;
-
 }
 
 .middledot{
