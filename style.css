@@ -301,7 +301,7 @@ footer{
 
     .mode {
         flex-direction: column;
-        padding: 4vh 5vw;
+        padding: 4vh 8vw;
         display: flex;
         gap: 7vw;
         flex-direction: row;
