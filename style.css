@@ -3,6 +3,10 @@
     font-family: poppins, roboto, sans-serif;
 }
 
+.fas.fa-bars{
+    display: none;
+}
+
 :root {
     --primary-color: white;
     --secondary-color: rgb(0, 98, 255);
@@ -237,7 +241,7 @@ footer{
     left: -4vw;
     text-align: center;
 }
-
+/* tablets */
 @media (max-width: 1024px) {
     #head-left {
         left: 0;
@@ -247,6 +251,7 @@ footer{
         flex-direction: column;
         margin-top: 10vh;
     }
+
 
     .body-left {
         width: 80vw;
@@ -267,6 +272,12 @@ footer{
     .skills {
         width: 20vw;
         height: 18vh;
+    }
+    .fas.fa-bars{
+        display: inline;
+        position: absolute;
+        top: 3vh;
+        right: 3vw;
     }
 }
 
@@ -290,7 +301,11 @@ footer{
 
     .mode {
         flex-direction: column;
-        padding: 2vh 1vw;
+        padding: 4vh 5vw;
+        display: flex;
+        gap: 7vw;
+        flex-direction: row;
+        border-radius: 8vh;
     }
 
     #body-upper {
