@@ -13,18 +13,18 @@
 ::-webkit-scrollbar {
     width: 6px; 
     height: 6px;
-  }
+}
   
   
-  ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background-color: var(--tertiary-color); 
     border-radius: 10px; 
-  }
+}
   
-  ::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     background: var(--primary-color);
     border-radius: 10px; 
-  }
+}
   
 body{
     padding: 0;
@@ -40,6 +40,7 @@ p{
 
 a{
     all: unset;
+    cursor: pointer;
     color: var(--tertiary-color);
     font-size: var(--deult-font-size);
     transition:color 0.25s;
@@ -50,7 +51,7 @@ nav{
     justify-content: space-around;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
     position: sticky;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(255, 255, 255, 0.97);
     top: 0;
     z-index: 1;
 }
@@ -125,6 +126,12 @@ nav{
     background-image: linear-gradient(to right top,aqua,var(--secondary-color),blue);
     font-weight: bold;
     color: var(--primary-color);
+    transition: box-shadow .15s;
+    }
+
+#cv-button:hover{
+    box-shadow: 20px 10px 50px rgb(0, 255, 255, 0.5),
+                -20px -10px 50px rgb(0, 98, 255, 0.5);
 }
 
 .main-pic{
@@ -134,4 +141,38 @@ nav{
     object-position: top;
     filter: blur(1px);
     /* border: 2px solid; */
+}
+
+#skill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F8F9FA;
+    padding-bottom: 10vh;
+    box-shadow: inset 1px 1px 10px rgba(0,0,0,0.1);
+}
+#skillset{
+    display: flex;
+    gap: 3vw;
+}
+
+.skills{
+    padding-top: 5vh;
+    text-align: center;
+    background-color: var(--primary-color);
+    border-radius: 2vh;
+    width: 10vw;
+    height: 20vh;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
+}
+
+#skill img{
+    height: 10vh;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20vh;
 }
