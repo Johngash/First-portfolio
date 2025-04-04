@@ -69,5 +69,5 @@ For any inquiries or collaboration, reach out:
 
 ---
 
-### ⭐ Don't forget to star the repository if you like it! ⭐
+### ⭐ Don't forget to star the repository if you like it! 😁⭐
 
