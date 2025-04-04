@@ -1,4 +1,4 @@
-#🌟 My Portfolio
+##🌟 My Portfolio
 
 Welcome to my personal portfolio! This project showcases my work, skills, and projects, including interactive web applications and algorithm visualizations.
 
