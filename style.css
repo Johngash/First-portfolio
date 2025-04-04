@@ -1,7 +1,10 @@
-/* General Styles */
 * {
     font-family: poppins, roboto, sans-serif;
+    box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}  
 
 .fas.fa-bars{
     display: none;
@@ -188,9 +191,8 @@ p{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #F8F9FA;
+    background-color: rgb(251, 250, 255);
     padding-bottom: 10vh;
-    box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.1);
 }
 
 #skillset {
@@ -204,7 +206,6 @@ p{
     background-color: var(--primary-color);
     border-radius: 2vh;
     width: 10vw;
-    height: 20vh;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
     transition: background-color 0.5s, box-shadow 0.25s;
     animation: appear 5s linear;
@@ -222,15 +223,48 @@ p{
     height: 10vh;
 }
 
+#projects{
+    width: 100vw;
+    border: 2px solid;
+    padding: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10vh;
+}
+
+.project{
+    display: flex;
+    gap: 2vw;
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+
+
+.project img{
+    height: 30vh;
+    width: 30vw;
+    object-fit: cover;
+}
+
+.stack{
+    color: var(--secondary-color);
+}
+
 footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 20vh;
     animation: flyIn 2s ease-in-out forwards;
+    box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.1);
 }
 
+
 .footers {
+    
     animation: flyin 5s ease-in-out forwards;
     animation-timeline: view();
     animation-range: entry 0% cover 10%;
@@ -241,14 +275,30 @@ footer{
     left: -4vw;
     text-align: center;
 }
+
 /* tablets */
 @media (max-width: 1024px) {
+    .fas.fa-bars{
+        display: inline;
+        position: fixed;
+        top: 3vh;
+        right: 3vw;
+        z-index: 10;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    
     #head-left {
         left: 0;
     }
 
     #body-upper {
         flex-direction: column;
+        align-items: center;
         margin-top: 10vh;
     }
 
@@ -271,13 +321,20 @@ footer{
 
     .skills {
         width: 20vw;
-        height: 18vh;
     }
-    .fas.fa-bars{
-        display: inline;
-        position: absolute;
-        top: 3vh;
-        right: 3vw;
+
+    .project {
+        flex-direction: column;
+        align-items: center;
+        gap: 5vh;
+    }
+
+    .project img {
+        width: 50vw;
+        height: auto;
+    }
+    .footers{
+        align-self: center;
     }
 }
 
@@ -286,6 +343,7 @@ footer{
     nav {
         flex-direction: column;
         align-items: center;
+    
     }
 
     #head-left {
@@ -335,13 +393,29 @@ footer{
 
     .skills {
         width: 80vw;
-        height: 18vh;
         margin: 1rem 0;
     }
 
     footer {
         flex-direction: column;
-        height: auto;
+        height: 20vh;
         padding: 2rem 0;
+        font-size: 0.9rem;
+    }
+
+    #projects {
+        padding: 5vh;
+        gap: 5vh;
+    }
+
+    .project {
+        flex-direction: column;
+        text-align: center;
+        gap: 3vh;
+    }
+
+    .project img {
+        width: 80vw;
+        height: auto;
     }
 }

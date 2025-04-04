@@ -12,15 +12,15 @@
     <script src="https://kit.fontawesome.com/38dc7bc86f.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav>
-        <i class="fas fa-bars"></i>
+    <i class="fas fa-bars" onclick="navShow()"></i>
+    <nav >
         <div id="head-left">
             <img src="Pics/icon.webp" alt="Njenga icon">
             <h2>John Njenga</h2>
         </div>
         <div id="head-right">
         <a href="#body-upper">About</a>
-        <a href="#">Projects</a>
+        <a href="#projects">Projects</a>
         <a href="#footer">Contacts</a>
         <div class="mode">
             <i class="fa-solid fa-sun"></i>
@@ -36,7 +36,7 @@
             <p>Hello there, I'm John 👋</p>
             <h1 >Frontend Js developer</h1>
             <p>Aspiring Developer with prociciency in js and python. AI enthusiast am all about tech so hit me up and i'll help you out.</p>
-            <a href="Pics/John_Njenga_Ng'ang'a_CVpdf"><button id="cv-button">Download CV</button></a>
+            <a href="Pics/John_Njenga_Ng'ang'a_CV.pdf"><button id="cv-button">Download CV</button></a>
         </div>
 
         <div class="body-right">
@@ -74,7 +74,45 @@
             </div>
         </div>
     </div>
-    
+    <div id="projects">
+        <div class="project one">
+            
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbW74OsxalMGpQcPIqmfPyu6xfqkcVadp-hw&s" alt="A dsaa visualizer img">
+            <div>
+                <h1>📊 DSA Visualizer (Data Structures & Algorithms Visualizer)</h1>
+                <p>An interactive tool that helps users understand fundamental data structures and algorithms through visual representation. Supports sorting algorithms like Bubble Sort, Quick Sort, and Merge Sort, as well as data structures like stacks, queues, and graphs. Features step-by-step animations for better learning.</p>
+                <p class="stack">Tech Stack: JavaScript, HTML, CSS, Canvas/SVG</p>
+            </div>
+        </div>
+        <div class="project two">
+            <div>
+            <h1>🎬 Movie Search App</h1>
+            <p>A sleek and intuitive movie search application that allows users to discover movies by title, genre, or release year. Powered by a public movie API, it provides real-time search results with detailed information, including ratings, descriptions, and posters. The app features a responsive design and a seamless user experience with dynamic filtering.</p>
+            <p class="stack">Tech Stack: JavaScript, HTML, CSS, API Integration</p>
+            </div>
+            <img src="https://utopianfool.co.uk/wp-content/uploads/2020/09/hooked.jpg" alt="A movie searcher img">
+            
+        </div>
+        <div class="project three">
+            
+            <img src="https://ucarecdn.com/6320962b-d4bf-4cfc-a66c-7972492f77c0/" alt="Weather app img">
+            <div>
+            <h1>☁️ Weather App</h1>
+            <p>A dynamic weather application that fetches real-time weather data based on user input or location services. It displays temperature, humidity, wind speed, and a 5-day forecast with visually appealing icons. The app enhances user experience with smooth animations and a clean, modern UI</p>
+            <p class="stack">Tech Stack: JavaScript, OpenWeather API, HTML, CSS</p>
+            </div>
+        </div>
+        <div class="project four">
+            <div>
+                <h1>✅ To-Do List App</h1>
+                <p>A minimalist and efficient to-do list application that helps users manage tasks effortlessly. Features include adding, editing, and deleting tasks, as well as marking them as complete. The app also supports local storage, ensuring tasks persist even after refreshing the page.</p>
+                <p class="stack">Tech Stack: JavaScript, HTML, CSS, Local Storage</p>
+            </div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSGsF4YHIvQyou0IldLPWzDVihV03k0i-Pag&s" alt="A To-do app">
+            
+        </div>
+    </div>
+
     <footer id="footer">
         
 
@@ -101,4 +139,5 @@
         </div>
     </footer>
 </body>
+<script src="script.js"></script>
 </html>
